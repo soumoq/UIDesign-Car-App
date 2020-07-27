@@ -17,15 +17,18 @@
         android:layout_height = "wrap_content"
         android:textColor="#3045A3"
         android:text = "Hi Adrian"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:layout_marginLeft="40dp"
         android:layout_toRightOf="@+id/reorder"
-        android:textStyle = "bold" />
+        android:textStyle = "bold"
+        android:layout_marginStart="40dp"
+        android:layout_toEndOf="@+id/reorder" />
 
 
     <ImageView
         android:layout_width = "wrap_content"
         android:layout_height = "wrap_content"
         android:layout_alignParentRight="true"
-        android:src = "@drawable/ic_outline_notifications_24" />
+        android:src = "@drawable/ic_outline_notifications_24"
+        android:layout_alignParentEnd="true" />
 </RelativeLayout>
