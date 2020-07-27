@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="280dp"
         android:layout_marginTop="-20dp"
-        android:src="@drawable/car" />
+        android:src="@drawable/ic_outline_report_24" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/blue_card_view"
@@ -21,8 +21,8 @@
         android:layout_marginLeft="10dp"
         android:layout_marginTop="-20dp"
         android:layout_marginRight="10dp"
-        app:cardCornerRadius="5dp"
-        app:cardBackgroundColor="#3045A3">
+        app:cardBackgroundColor="#3045A3"
+        app:cardCornerRadius="5dp">
 
         <RelativeLayout
             android:layout_width="wrap_content"
@@ -32,6 +32,7 @@
                 android:id="@+id/clock_image"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:src="@drawable/ic_baseline_access_alarms_24" />
@@ -40,52 +41,60 @@
                 android:id="@+id/service_due_date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
+                android:layout_toEndOf="@+id/clock_image"
                 android:layout_toRightOf="@+id/clock_image"
                 android:text="Next Service Due Date"
                 android:textColor="#FFFFFF"
-                android:textSize="15dp" />
+                android:textSize="15sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/service_due_date"
+                android:layout_marginStart="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/clock_image"
                 android:layout_toRightOf="@+id/clock_image"
                 android:text="GJ6FK2817"
                 android:textColor="#FFFFFF"
-                android:textSize="15dp" />
+                android:textSize="15sp" />
 
             <TextView
                 android:id="@+id/date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
                 android:layout_marginRight="10dp"
                 android:text="25 Jun, 2019"
                 android:textColor="#FFFFFF"
-                android:textSize="15dp" />
+                android:textSize="15sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/date"
+                android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
                 android:layout_marginRight="10dp"
                 android:text="i10"
                 android:textColor="#FFFFFF"
-                android:textSize="15dp" />
+                android:textSize="15sp" />
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/button_card_view"
         android:layout_width="match_parent"
-        android:layout_height="239dp"
+        android:layout_height="match_parent"
         android:layout_below="@+id/blue_card_view"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="-10dp"
@@ -99,10 +108,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/image_settings"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
+                    android:layout_marginStart="20dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="20dp"
                     android:src="@drawable/ic_outline_settings_24"
@@ -114,6 +124,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/image_settings"
+                    android:layout_marginStart="30dp"
                     android:layout_marginLeft="30dp"
                     android:layout_marginTop="5dp"
                     android:text="Book a \nService"
@@ -121,7 +132,7 @@
                     android:textSize="15dp" />
 
 
-                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/image_calculator"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
@@ -141,12 +152,14 @@
                     android:text="  Service\nCalculator"
                     android:textColor="#000000" />
 
-                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/image_history"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
+                    android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
                     android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
                     android:layout_marginRight="20dp"
                     android:src="@drawable/ic_round_history_24"
                     app:civ_border_color="#9A97FF"
@@ -158,17 +171,20 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/image_history"
+                    android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
+                    android:layout_marginEnd="25dp"
                     android:layout_marginRight="25dp"
                     android:text="Service\nHistory"
                     android:textColor="#000000"
-                    android:textSize="15dp" />
+                    android:textSize="15sp" />
 
-                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/image_car"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:layout_below="@+id/image_settings_text"
+                    android:layout_marginStart="20dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="20dp"
                     android:src="@drawable/ic_baseline_directions_car_24"
@@ -180,12 +196,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/image_car"
+                    android:layout_marginStart="30dp"
                     android:layout_marginLeft="30dp"
                     android:text="Find Car"
                     android:textColor="#000000"
-                    android:textSize="15dp" />
+                    android:textSize="15sp" />
 
-                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/image_notes"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
@@ -202,19 +219,22 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/image_notes"
                     android:layout_centerHorizontal="true"
+                    android:layout_marginStart="20dp"
                     android:layout_marginLeft="20dp"
                     android:text="Find Car"
                     android:textColor="#000000"
-                    android:textSize="15dp" />
+                    android:textSize="15sp" />
 
 
-                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/image_report"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:layout_below="@+id/image_history_text"
+                    android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
                     android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
                     android:layout_marginRight="20dp"
                     android:src="@drawable/ic_outline_report_24"
                     app:civ_border_color="#F085FF"
@@ -225,11 +245,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/image_report"
+                    android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
+                    android:layout_marginEnd="30dp"
                     android:layout_marginRight="30dp"
                     android:text="Report"
                     android:textColor="#000000"
-                    android:textSize="15dp" />
+                    android:textSize="15sp" />
 
 
             </RelativeLayout>
