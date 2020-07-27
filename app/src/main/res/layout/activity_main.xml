@@ -11,7 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="280dp"
         android:layout_marginTop="-20dp"
-        android:src="@drawable/ic_outline_report_24" />
+        android:src="@drawable/ic_outline_report_24"
+        tools:ignore="ContentDescription" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/blue_card_view"
@@ -35,7 +36,8 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/ic_baseline_access_alarms_24" />
+                android:src="@drawable/ic_baseline_access_alarms_24"
+                tools:ignore="ContentDescription" />
 
             <TextView
                 android:id="@+id/service_due_date"
